@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Cache-Control: max-age=31536000 -->
+  <link rel="stylesheet" href="loading.css">
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Expert Flutter Developer Noman">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="my_web">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>my_web</title>
+  <link rel="manifest" href="manifest.json">
+
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = "206747834";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+  <link rel="preload" href="https://firebasestorage.googleapis.com/v0/b/noman9k.appspot.com/o/portfolio-images%2Fmain_image.png?alt=media&token=3f74c10c-ebca-4a75-945e-69018075d3a9" as="fetch" crossorigin/>
+  <link rel="preload" href="https://firebasestorage.googleapis.com/v0/b/noman9k.appspot.com/o/portfolio-images%2F4.png?alt=media&token=72316e74-33ba-43e6-8eb3-c46e5351a4f8" as="fetch" crossorigin/>
+  <link rel="preload" href="https://firebasestorage.googleapis.com/v0/b/noman9k.appspot.com/o/portfolio-images%2F3.png?alt=media&token=7ff402c9-26bc-4002-9431-1117274ceac9" as="fetch" crossorigin/>
+  <link rel="preload" href="https://firebasestorage.googleapis.com/v0/b/noman9k.appspot.com/o/portfolio-images%2F2.png?alt=media&token=31edf066-9ed3-4e9e-83ff-2726466a6a5d" as="fetch" crossorigin/>
+  <link rel="preload" href="https://firebasestorage.googleapis.com/v0/b/noman9k.appspot.com/o/portfolio-images%2F001.png?alt=media&token=65450e73-5e9d-40ee-a845-2bd5aea5c3af" as="fetch" crossorigin/>
+  <link rel="preload" href="https://firebasestorage.googleapis.com/v0/b/noman9k.appspot.com/o/portfolio-images%2F00.png?alt=media&token=975ef3fd-c498-4ed8-a408-3bead94a1da2" as="fetch" crossorigin/>
+</head>
+<body>
+  <!-- <style>
+    body {
+      background-color: #c81212;
+    }
+  </style> -->
+
+  <script>
+    function delay (time) {
+        return new Promise((resolve) => setTimeout(resolve, time));
+    }
+
+    window.addEventListener('load', function(ev) {
+      var loader = document.getElementById('loader-content');
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(async function(appRunner) {
+            
+          
+            await appRunner.runApp();
+            await delay(1000);
+            
+            loader.style.display = 'none';
+          });
+        }
+      });
+    });
+  </script>
+
+  <div class="center" id="loader-content">
+ 
+    <div  class="wave"></div>
+    <div  class="wave"></div>
+    <div  class="wave"></div>
+    <div  class="wave"></div>
+    <div  class="wave"></div>
+    <div  class="wave"></div>
+    <div  class="wave"></div>
+    <div  class="wave"></div>
+    <div  class="wave"></div>
+    <div  class="wave"></div>
+  </div>
+ 
+  
+ 
+</body>
+</html>
