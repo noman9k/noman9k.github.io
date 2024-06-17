@@ -1,5 +1,5 @@
 {   
     "status" : "success",
-    "message" : "Hey Pay the 500",
+    "message" : "Oops there is an error",
     "payment" : false
 }
